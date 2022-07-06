@@ -1,0 +1,13 @@
+<svg width="280" height="114" xmlns="http://www.w3.org/2000/svg" stroke="null">
+ <g stroke="null">
+  <title stroke="null">Layer 1</title>
+  <path fill="#fff" stroke="#000" opacity="NaN" d="m66,53" id="svg_4"/>
+  <rect opacity="0.5" fill="#303030" stroke="#000" x="0" y="-1" width="280" height="100" id="svg_10" fill-opacity="0.5" stroke-width="0"/>
+  <ellipse stroke-width="0" opacity="0.5" fill="#303030" stroke="#000" cx="30" cy="80" id="svg_14" rx="40" ry="40" fill-opacity="0.5"/>
+  <ellipse opacity="0.5" fill="#303030" stroke="#000" cx="250" cy="80" id="svg_15" rx="40" ry="40" fill-opacity="0.5" stroke-width="0"/>
+  <ellipse opacity="0.5" fill="#303030" stroke="#000" cx="200" cy="95" id="svg_16" rx="50" ry="26" fill-opacity="0.5" stroke-width="0"/>
+  <ellipse opacity="0.5" fill="#303030" stroke="#000" cx="81" cy="94" id="svg_17" rx="50" ry="26" fill-opacity="0.5" stroke-width="0"/>
+  <path transform="rotate(90 140.455 87.885)" opacity="0.5" fill="#303030" stroke="#000" d="m126.455,72.88499l35,0c-3.86599,0 -7,6.71573 -7,15c0,8.28427 3.13401,15 7,15l-35,0l0,0c-3.86599,0 -7,-6.71573 -7,-15c0,-8.28427 3.13401,-15 7,-15z" id="svg_22" fill-opacity="0.5" stroke-width="0"/>
+ </g>
+
+</svg>
