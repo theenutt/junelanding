@@ -4,3 +4,20 @@
     line-height: 17/14*100%;
     color: #fff;
 }
+.montserrat26 {
+    font-family: $ff;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 32/26*100%;
+    color: #fff;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.montserrat36 {
+    font-family: $ff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44/36*100%;
+    color: #fff;
+    letter-spacing: 0.03em;
+}
