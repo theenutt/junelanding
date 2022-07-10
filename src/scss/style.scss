@@ -25,6 +25,7 @@ body {
     color: #000;
     font-family: $font-family;
     font-size: 14px;
+    background: url(/img/Desktop.jpg) no-repeat center;
     &._lock {
         overflow: hidden;
     }
