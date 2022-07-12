@@ -1,0 +1,53 @@
+.about {
+    &__paragraph {
+        padding-left: 96px;
+    }
+
+    &__container {
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__text {
+    }
+
+    &__textblock {
+        box-sizing: border-box;
+        width: 500px;
+        height: 476px;
+        border: 1px solid #343434;
+        border-radius: 10px;
+        padding: 31px 27px 0px 27px;
+        h4 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 25/20*100%;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+        p:first-of-type {margin-bottom: 60px;}
+    }
+
+    &__mission {
+    }
+
+    &__images {
+    }
+
+    &__macbook {
+    }
+
+    &__btn {
+    }
+
+    &__sign {
+    }
+
+    &__arrow {
+    }
+}
+
+

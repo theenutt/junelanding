@@ -1,14 +1,17 @@
-$md3: 767.98;
-$md2: 991.98;
+
 
 .header {
+    
     &__first {
-        //background-image: url(/img/header/blur.png);
+        position: relative;
+        
     }
     &__content {
-        position: relative;
+        
         padding: 0px 6px;
         height: 807px;
+        max-width: 1215px;
+        margin: 0 auto;
         &::after {
             content: url(/img/header/znak_big.png);
             position: absolute;
@@ -204,7 +207,10 @@ $md2: 991.98;
 }
 .header__perehod {
     position: absolute;
+    width:1495px;
+    height: 654px;
     top: 570px;
+    left: 0;
 }
 .gothic14 {
 }

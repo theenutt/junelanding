@@ -1,7 +1,7 @@
 $font-family: "Open Sans";
 $minWidth: 320px;
 $maxWidth: 1495;
-$maxWidthContainer: 1141;
+$maxWidthContainer: 1159;
 $md1: $maxWidthContainer + 12;
 $md2: 320.98;
 $ff: Montserrat;
@@ -14,6 +14,7 @@ $ff: Montserrat;
 @import "null.scss";
 @import "ui.scss";
 @import "header.scss";
+@import "about.scss";
 
 //$md3: 767.98;
 //$md4: 479.98;
