@@ -11,6 +11,8 @@
     }
 
     &__text {
+        position: relative;
+        padding-bottom: 200px;
     }
 
     &__textblock {
@@ -32,6 +34,18 @@
     }
 
     &__mission {
+        position: absolute;
+        width: 542px;
+        height: 117px;
+        top: 540px;
+        left: 100px;
+        background: radial-gradient(103.66% 103.66% at 50% 50%, #93D0FC 0%, rgba(147, 208, 252, 0.63) 100%);
+        opacity: 0.8;
+        //filter: blur(49.7143px);
+        border-radius: 9.94286px;
+        color:#FFFFFF;
+        //&::before
+
     }
 
     &__images {
