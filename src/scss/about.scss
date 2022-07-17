@@ -13,6 +13,7 @@
     &__text {
         position: relative;
         padding-bottom: 200px;
+        z-index: 0;
     }
 
     &__textblock {
@@ -34,18 +35,42 @@
     }
 
     &__mission {
-        position: absolute;
+        position: fixed;
         width: 542px;
         height: 117px;
         top: 540px;
         left: 100px;
+        display: block;
         background: radial-gradient(103.66% 103.66% at 50% 50%, #93D0FC 0%, rgba(147, 208, 252, 0.63) 100%);
         opacity: 0.8;
-        //filter: blur(49.7143px);
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(1.7143px);
         border-radius: 9.94286px;
-        color:#FFFFFF;
-        //&::before
+        color: #FFFFFF;
+        z-index: 1;
+        /*&::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 542px;
+            height: 117px;
+            background: linear-gradient(89.85deg, rgba(147, 208, 252, 0.3) 0.1%, rgba(210, 166, 255, 0.3) 95.31%);
+            box-shadow: inset 0px 0px 9px rgba(255, 255, 255, 0.35);
+            backdrop-filter: blur(1px);
+            z-index: 2;
+        }*/
+    }
 
+    &__missionLabels  {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        color: #FFFFFF;
     }
 
     &__images {
