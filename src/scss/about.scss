@@ -35,22 +35,16 @@
     }
 
     &__mission {
-        position: fixed;
+        position: absolute;
         width: 542px;
         height: 117px;
         top: 540px;
         left: 100px;
-        display: block;
         background: radial-gradient(103.66% 103.66% at 50% 50%, #93D0FC 0%, rgba(147, 208, 252, 0.63) 100%);
         opacity: 0.8;
-        -webkit-filter: blur(5px);
-        -moz-filter: blur(5px);
-        -o-filter: blur(5px);
-        -ms-filter: blur(5px);
-        filter: blur(1.7143px);
+        
         border-radius: 9.94286px;
-        color: #FFFFFF;
-        z-index: 1;
+        
         /*&::before {
             content: "";
             position: fixed;
@@ -64,9 +58,22 @@
             z-index: 2;
         }*/
     }
+    &__mission::before {
+        content: "";
+        z-index: -1;
+        position: inherit;
+        left: inherit;
+        top: inherit;
+        width: inherit;
+        height: inherit;
+        background: inherit;
+        background-size: cover;
+        filter:blur(100px);
+       
+    }
 
     &__missionLabels  {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         z-index: 100;
