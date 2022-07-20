@@ -39,45 +39,54 @@
         width: 542px;
         height: 117px;
         top: 540px;
-        left: 100px;
+        left: 100px;        
+        border-radius: 5% / 50%;
+    }
+    
+    &__missionBG {
+        position:absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
         background: radial-gradient(103.66% 103.66% at 50% 50%, #93D0FC 0%, rgba(147, 208, 252, 0.63) 100%);
+        background-size:cover;
+        z-index:10;
+        border-radius: 5% / 50%;
+        /*-webkit-filter: blur(50px);
+        -moz-filter: blur(50px);
+        -o-filter: blur(50px);
+        -ms-filter: blur(50px);
+        filter: blur(50px);	*/
         opacity: 0.8;
-        
-        border-radius: 9.94286px;
-        
-        /*&::before {
-            content: "";
-            position: fixed;
+    }  
+
+    &__missionBG2 {
+            position: absolute;
             top: 0;
             left: 0;
             width: 542px;
             height: 117px;
             background: linear-gradient(89.85deg, rgba(147, 208, 252, 0.3) 0.1%, rgba(210, 166, 255, 0.3) 95.31%);
             box-shadow: inset 0px 0px 9px rgba(255, 255, 255, 0.35);
-            backdrop-filter: blur(1px);
-            z-index: 2;
-        }*/
-    }
-    &__mission::before {
-        content: "";
-        z-index: -1;
-        position: inherit;
-        left: inherit;
-        top: inherit;
-        width: inherit;
-        height: inherit;
-        background: inherit;
-        background-size: cover;
-        filter:blur(100px);
-       
+            -webkit-backdrop-filter: blur(50px);
+            -moz-backdrop-filter: blur(50px);
+            -o-backdrop-filter: blur(50px);
+            -ms-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
+            border-radius: 4% / 50%;
+            z-index: 5;
     }
 
     &__missionLabels  {
-        position: absolute;
-        top: 0;
-        left: 0;
+        position: relative;
         z-index: 100;
         color: #FFFFFF;
+        h3 {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.015em;
+        }
     }
 
     &__images {
