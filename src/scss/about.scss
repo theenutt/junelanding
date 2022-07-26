@@ -126,6 +126,26 @@
     }
 
     &__btn {
+        position: absolute;
+        width: 97px;
+        height: 97px;
+        left: 0px;
+        top: 0px;
+        border: 0.746154px solid #E4B354;
+        border-radius: 50%;
+    }
+    &__btnBackBlur {
+        position: absolute;
+        left:-50%;
+        right:50%;
+        top:-50%;
+        bottom:50%;
+        width: 168.71px;
+        height: 166.58px;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 199, 0, 0.5) 0%, rgba(255, 199, 0, 0) 95.73%);
+        mix-blend-mode: lighten;
+        filter: blur(93px);
+        border-radius: 50%;
     }
 
     &__sign {
