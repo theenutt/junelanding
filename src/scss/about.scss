@@ -174,17 +174,38 @@
     }
 
     &__btnCircle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
         width: 59.69px;
         height: 59.69px;
-        left:25%;
-        top:25%;
+        left:18.5%;
+        top:18.5%;
         background: #FFC700;
         box-shadow: inset 0px 0px 11px #EDFF1E;
         border-radius: 50%;
+        &Blur {
+            position: absolute;
+            width: 59.69px;
+            height: 59.69px;
+            left: 0;
+            top: 0;
+            right:0;
+            bottom:0;
+            background: #D9E454;
+            opacity: 0.4;
+            filter: blur(5.96923px);
+            border-radius: 50%;
+        }
     }
 
     &__btnTrngl {
+        position: absolute;
+        width: 27.61px;
+        height: 27.61px;
+        background-image: url(/img/about/play.png);
+        
     }
 
 
