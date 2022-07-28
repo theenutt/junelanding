@@ -136,10 +136,10 @@
     }
     &__btnBackBlur {
         position: absolute;
-        left:-50%;
-        right:50%;
-        top:-50%;
-        bottom:50%;
+        left:-36.5px;
+        right:0;
+        top:-35.5px;
+        bottom:0;
         width: 168.71px;
         height: 166.58px;
         background: radial-gradient(50% 50% at 50% 50%, rgba(255, 199, 0, 0.5) 0%, rgba(255, 199, 0, 0) 95.73%);
@@ -147,6 +147,47 @@
         filter: blur(93px);
         border-radius: 50%;
     }
+    &__btnBrdr1 {
+        position: absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        width: 97px;
+        height: 97px;
+        border: 2px solid rgba(228, 179, 84, 0.6);
+        filter: blur(14px);
+        border-radius: 50%;
+    }
+
+    &__btnBrdr2 {
+        position: absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        width: 97px;
+        height: 97px;
+        border: 2px solid rgba(228, 179, 84, 0.6);
+        filter: blur(4px);
+        border-radius: 50%;
+    }
+
+    &__btnCircle {
+        position: absolute;
+        width: 59.69px;
+        height: 59.69px;
+        left:25%;
+        top:25%;
+        background: #FFC700;
+        box-shadow: inset 0px 0px 11px #EDFF1E;
+        border-radius: 50%;
+    }
+
+    &__btnTrngl {
+    }
+
+
 
     &__sign {
     }
