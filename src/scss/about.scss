@@ -129,8 +129,8 @@
         position: absolute;
         width: 97px;
         height: 97px;
-        left: 0px;
-        top: 0px;
+        left: 280px;
+        top: 450px;
         border: 0.746154px solid #E4B354;
         border-radius: 50%;
     }
@@ -174,9 +174,6 @@
     }
 
     &__btnCircle {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         position: absolute;
         width: 59.69px;
         height: 59.69px;
@@ -198,12 +195,17 @@
             filter: blur(5.96923px);
             border-radius: 50%;
         }
+        &:hover {
+            background: #FFD748;
+        }
     }
 
     &__btnTrngl {
         position: absolute;
         width: 27.61px;
         height: 27.61px;
+        left:30%;
+        top: 30%;
         background-image: url(/img/about/play.png);
         
     }
