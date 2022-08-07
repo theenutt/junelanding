@@ -9,7 +9,7 @@
     &__content {
         
         padding: 0px 6px;
-        height: 807px;
+        //height: 807px;
         max-width: 1215px;
         margin: 0 auto;
         &::after {
@@ -106,7 +106,6 @@
         background: linear-gradient(89.85deg, rgba(147, 208, 252, 0.3) 0.1%, rgba(210, 166, 255, 0.3) 95.31%);
         box-shadow: inset 0px 0px 9px rgba(255, 255, 255, 0.35);
         backdrop-filter: blur(7px);
-        /* Note: backdrop-filter has minimal browser support */
         border-radius: 3px;
         transform: skew(-9deg);
         padding: 18px 32px 18px 32px;
@@ -208,7 +207,7 @@
 .header__perehod {
     position: absolute;
     width:1495px;
-    height: 654px;
+    //height: 654px;
     top: 570px;
     left: 0;
 }
@@ -234,7 +233,7 @@
 .header {
 
     &__second {
-        margin-top: 326px;
+        margin-top: 526px;
     }
 
     &__container {

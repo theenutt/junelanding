@@ -18,3 +18,4 @@ function testWebP(callback) {
     }
     });
 }
+

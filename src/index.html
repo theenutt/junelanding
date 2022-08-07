@@ -54,17 +54,19 @@
             <section class="wyget">
                 <div class="wyget__container _container">
                     <div class="wyget__content">
-                        <h2 class="montserrat36">что ты получишь</h2>
-                        <p class="montserrat26">после марафона</p>
-                        <p class="wyget__paragraph"><i>По завершению марафона вы будете допущены на сдачу экзаменов <br>на управление транспортных средств:</i></p>
+                        <div class="wyget_headers">
+                            <h2 class="montserrat36">что ты получишь</h2>
+                            <p class="montserrat26">после марафона</p>
+                            <p class="wyget__paragraph"><i>По завершению марафона вы будете допущены на сдачу экзаменов <br>на управление транспортных средств:</i></p>
+                        </div>
                         <div class="wyget__cards">
-                            <div class="wyget__category wyget__A">
+                            <div class="wyget__category wygetCat__A">
                                 <h3><i>КАТЕГОРИИ А-А1</i></h3>
                                 <p class="gothic14">- Управление мотоциклами.</p><br>
                                 <p class="gothic14">- Категория А1 позволяет управлять мотоциклами с мощностью двигателя не прывышающую 125 куб, см, и макс. мощность не более 11 КвТ.</p><br>
                                 <p class="gothic14">- Обладатели категории А автоматически получают категорию А1</p>
                             </div>
-                            <div class="wyget__category wyget__B">
+                            <div class="wyget__category wygetCat__B">
                                 <h3><i>КАТЕГОРИИ B-B1</i></h3>
                                 <p class="gothic14">- Управление легковыми автомобилями, трициклами, квадроциклы.</p><br>
                                 <p class="gothic14">- Категория B дает возможность управлять легковым автомобилем, небольшими грузовиками, микроавтобусами, соответствующие некоторым требованиям.</p><br>
@@ -74,9 +76,56 @@
                     </div>
                 </div>
             </section>
+            <section class="faq">
+                <div class="faq__container _container">
+                    <h2 class="montserrat36">остались вопросы?</h2>
+                    <p class="montserrat26">здесь ты найдешь ответы</p>
+                    <div class="faq__spoilers one" data-spoiler="open">
+                        <div class="faq__spoiler">
+                            <div class="faq__question">
+                                <div class="faq__text"><h5><i>А Кто может быть участником марафона?</i></h5></div>
+                                <div class="faq__cross"></div>
+                            </div>
+                            <div class="faq__answer"><!--<p class="gothic14">-->Участником марафона может быть любой гражданин РК достигший 16 лет.<!--</p>--></div>
+                        </div>
+                        <div class="faq__spoiler">
+                            <div class="faq__question">
+                                <div class="faq__text"><h5><i>А Кто может быть участником марафона?</i></h5></div>
+                                <div class="faq__cross"></div>
+                            </div>
+                            <div class="faq__answer"><p class="gothic14">Участником марафона может быть любой гражданин РК достигший 16 лет.</p></div>
+                        </div>
+                        <div class="faq__spoiler">
+                            <div class="faq__question">
+                                <div class="faq__text"><h5><i>А Кто может быть участником марафона?</i></h5></div>
+                                <div class="faq__cross"></div>
+                            </div>
+                            <div class="faq__answer"><p class="gothic14">Участником марафона может быть любой гражданин РК достигший 16 лет.</p></div>
+                        </div>
+                        <div class="faq__spoiler">
+                            <div class="faq__question">
+                                <div class="faq__text"><h5><i>А Кто может быть участником марафона?</i></h5></div>
+                                <div class="faq__cross"></div>
+                            </div>
+                            <div class="faq__answer"><p class="gothic14">Участником марафона может быть любой гражданин РК достигший 16 лет.</p></div>
+                        </div>
+                        <div class="faq__spoiler">
+                            <div class="faq__question">
+                                <div class="faq__text"><h5><i>А Кто может быть участником марафона?</i></h5></div>
+                                <div class="faq__cross"></div>
+                            </div>
+                            <div class="faq__answer"><p class="gothic14">Участником марафона может быть любой гражданин РК достигший 16 лет.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         @@include('footer.html',{})
-    </div>  
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
     <script src="js/app.min.js"></script>
     @@include('_js.html', {})
 </body>
