@@ -4,6 +4,19 @@
     p {
         padding-left: 200px;
     }
+    &__header {position: relative;}
+    &__blur {
+        position: absolute;
+        left: -230px;;
+        right:0;
+        top: -80px;;
+        bottom:0;
+        width: 938px;
+        height: 207px;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(147, 208, 252, 0.25) 0%, rgba(147, 208, 252, 0) 100%);
+        filter: blur(69px);
+        border-radius:60%;
+    }
     &__answer {
         display: none;
         width: 960px;
@@ -38,6 +51,11 @@
         align-items: center;
         justify-content: space-between;
         cursor: pointer;
+        &.active {
+            .faq__cross {
+            transform: rotate(45deg);
+            }
+        }
     }
 
     &__text {
@@ -52,15 +70,16 @@
     &__cross {
         width: 0px;
         height: 28px;
-        border: 2.5px solid #FFFFFF;
+        border: 3px solid #FFFFFF;
         position: relative;
         border-radius: 50% / 10%;
         left: -40px;
+        transition: all 0.3s ease 0s;
         &:after {
         content: "";
         width: 28px;
         height: 0px;
-        border: 2.4px solid #FFFFFF;
+        border: 3px solid #FFFFFF;
         position: absolute; 
         left: -14.5px; 
         top: 8px;
