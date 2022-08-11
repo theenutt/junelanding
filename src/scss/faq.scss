@@ -1,6 +1,6 @@
 .faq {
     margin-top: 335px;
-    margin-bottom: 300px;
+    position: relative;
     p {
         padding-left: 200px;
     }
@@ -85,5 +85,11 @@
         top: 8px;
         border-radius: 10% / 50%;
         }
+    }
+    &__perehod {
+        position: absolute;
+        width:1495px;
+        top: 720px;
+        left: 0;
     }
 }
