@@ -58,6 +58,7 @@
             top: 135px;
             left: -100px;
             z-index: 2;
+            object-fit: contain;
         }
     }
 
@@ -72,6 +73,7 @@
             top: -70px;
             left: 350px;
             z-index: 1;
+            object-fit: contain;
         }
     }
 }

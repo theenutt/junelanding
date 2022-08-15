@@ -3,7 +3,7 @@ $minWidth: 320px;
 $maxWidth: 1495;
 $maxWidthContainer: 1159;
 $md1: $maxWidthContainer + 12;
-$md2: 320.98;
+$md3: 320.98;
 $ff: Montserrat;
 //@import "mixins";
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700&display=swap&subset=cyrillic-ext);
@@ -54,7 +54,7 @@ body {
     @media (max-width: $md1+px) {
         max-width: 750px;
     }
-    @media (max-width: $md2+px) {
+    @media (max-width: $md3+px) {
         max-width: none;
         padding: 0 10px;
     }

@@ -39,6 +39,7 @@
             position: absolute;
             top: -35px;
             left: -95px;
+            object-fit: contain;
         }
     }
 
@@ -106,6 +107,7 @@
         margin: 0px 0px 0px 121px;
         padding-top: 56px;
         padding-right: 327px;
+        object-fit: contain;
     }
 
     &__macbook {
@@ -115,6 +117,7 @@
             top: 90px;
             left: 515px;
             z-index: 2;
+            object-fit: contain;
         }
         &::after {
             content: url(/img/about/screen.png);
@@ -122,6 +125,7 @@
             top: 70px;
             left: 192px;
             z-index: 1;
+            object-fit: contain;
         }
         &::before,after {
             content: url(/img/about/play_in.png);
@@ -129,6 +133,7 @@
             top: 185px;
             left: 335px;
             z-index: 3;
+            object-fit: contain;
         }
     }
     &__macbookBlur {
@@ -165,7 +170,7 @@
             border: 0.746154px solid #AEAEAE;
             .about__btnCircle {background: #676767;}
             .about__btnBrdr2 {display: none;}
-            .about__btnTrngl {background-image: url(/img/about/play_disabled.png);}
+            .about__btnTrngl {background-image: url(/img/about/play_disabled.png);object-fit: contain;}
             .about__btnBackBlur {display: none;}
             .about__btnBrdr1 {display: none;}
             .about__btnCircleBlur {display: none;}
@@ -244,6 +249,7 @@
         left:32%;
         top: 30%;
         background-image: url(/img/about/play.png);
+        object-fit: contain;
         
     }
 

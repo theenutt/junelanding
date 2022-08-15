@@ -16,7 +16,14 @@
             content: url(/img/header/znak_big.png);
             position: absolute;
             top: 0;
-            left: 90%;
+            left: 85%;
+            object-fit: contain;
+        }
+        @media (max-width: $md3+px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
     }
 }
@@ -33,12 +40,20 @@
             text-decoration: none;
             margin: 0 91px 0 0;
             color: #fff;
+            @media (max-width: $md3+px) {
+                margin: 0;
+            }
             p {
                font-family: $ff;
                font-weight: 300;
                font-size: 11px;
                line-height: 13 / 11*100%;
-               letter-spacing: 3%;
+               letter-spacing: 0.03em;
+               @media (max-width: $md3+px) {
+                font-size: 6px;
+                line-height: 7.3/6*100%;
+                padding-top: 0;
+            }
             }
         }
 
@@ -50,6 +65,9 @@
                font-weight: 700;
                line-height: 16/13*100%;
             }
+            @media (max-width: $md3+px) {
+                display: none;
+            }
         }
         
         .header__topLink2 {
@@ -58,8 +76,16 @@
             text-align: center;
             p:first-child {
                 font-size: 16px;
-                font-weight: 400;
+                font-weight: 600;
                 line-height: 19/16*100%;
+                @media (max-width: $md3+px) {
+                    font-size: 9px;
+                    line-height: 11/9*100%;
+                }
+        }
+        @media (max-width: $md3+px) {
+            padding-top: 0;
+            text-align: right;
         }
     }
 }
@@ -95,6 +121,7 @@
             left: 670px;
             z-index: 1;
             filter: blur(3.5px);
+            object-fit: contain;
         }
     }
 
@@ -122,6 +149,7 @@
             top: -35px;
             left: -75px;
             transform: rotate(-5deg);
+            object-fit: contain;
         }
     }
 
@@ -210,6 +238,9 @@
     //height: 654px;
     top: 570px;
     left: 0;
+    @media (max-width: $md3+px) {
+        display: none;
+    }
 }
 .gothic14 {
 }
@@ -227,6 +258,17 @@
     position: relative;
     top: -10px;
     left: 0;
+    @media (max-width: $md3+px) {
+        top: -20px;
+        width: 122.38px;
+        height: 66px;
+        margin-left: 99px;
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 /*==============================================================================*/
@@ -293,6 +335,7 @@
             justify-content: center;
             img {
                 padding-top: 40px ;
+                object-fit: contain;
             }
         }
         p {
