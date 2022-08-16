@@ -15,9 +15,16 @@
         &::after {
             content: url(/img/header/znak_big.png);
             position: absolute;
+            width: 221px;
+            height: 221px;
             top: 0;
             left: 85%;
-            object-fit: contain;
+            @media (max-width: $md3+px) {
+                left: 0;
+                width: 74px;
+                height: 74px;
+                object-fit: contain;
+            }
         }
         @media (max-width: $md3+px) {
             display: flex;
@@ -84,7 +91,7 @@
                 }
         }
         @media (max-width: $md3+px) {
-            padding-top: 0;
+            padding: 11px 0px 0px 18px;
             text-align: right;
         }
     }
@@ -94,25 +101,44 @@
 
     &__hello {
         margin-top: 80px;
+        @media (max-width: $md3+px) {
+            margin-top: 25px;
+        }
     }
 
     &__main {
         position: relative;
+        @media (max-width: $md3+px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.03em;
+        }
         h1 {
             font-family: $ff;
             font-size: 43px;
-            font-weight: 300;
+            font-weight: 100;
             line-height: 52.4/43*100%;
-            letter-spacing: 3%;
             color: #fff;
             text-transform: uppercase;
+            @media (max-width: $md3+px) {
+                font-size: 16px;
+                line-height: 20/16*100%;
+            }
         }
         p {
             font-family: $ff;
             font-size: 15px;
-            font-weight: 400;
+            font-weight: 200;
             line-height: 18.3/15*100%;
             color: #fff;
+            b {font-weight: 300;}
+            @media (max-width: $md3+px) {
+                font-size: 12px;
+                line-height: 15/12*100%;
+            }
         }
         &::before {
             content: url(/img/header/znakU.png);
@@ -122,6 +148,21 @@
             z-index: 1;
             filter: blur(3.5px);
             object-fit: contain;
+            @media (max-width: $md3+px) {
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+    &__mediaoff {
+        @media (max-width: $md3+px) {
+            display: none;
+        }
+    }
+    &__mediaon {
+        display: none;
+        @media (max-width: $md3+px) {
+            display: inline-block;
         }
     }
 
@@ -137,9 +178,16 @@
         transform: skew(-9deg);
         padding: 18px 32px 18px 32px;
         color: #fff;
+        @media (max-width: $md3+px) {
+            margin-top: 247px;
+            width: 203px;
+            height: 48.01px;
+            box-shadow: inset 0px 0px 6.1723px rgba(255, 255, 255, 0.35);
+            padding: 12px 18px;
+        }
         .message__inner {
             transform: skew(9deg);
-            letter-spacing: 0.6px;
+            letter-spacing: 0.03em;
             padding: 0;
             margin: 0;
         }
@@ -157,6 +205,10 @@
         display: flex;
         position: relative;
         margin-top: 70px;
+        @media (max-width: $md3+px) {
+            flex-direction: column;
+            margin-top: 23px;
+        }
         p {
             margin: 15px auto 23px 90px ;
 
@@ -167,10 +219,16 @@
             background:#D9E454;
             box-shadow: 0px 0px 11px #D9E454;
             border-radius: 5% / 50%;
+            @media (max-width: $md3+px) {
+                width: 190px;
+                height: 53.04px;
+                box-shadow: 0px 0px 9px #D9E454;
+            }
             &:hover {background: #F2FF5D;}
             &:active {
                 background:#D9E454;
                 box-shadow: 0px 0px 11px #D9E454;
+                @media (max-width: $md3+px) {box-shadow: 0px 0px 9px #D9E454;}
             }
             &:disabled {background: #676767;}
             .link__box {
@@ -183,7 +241,7 @@
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 17/14*100%;
-                letter-spacing: 1.4px;
+                letter-spacing: 0.1;
                 text-transform: uppercase;
                 color: #000;
                 &:hover {background: none;}
@@ -262,7 +320,7 @@
         top: -20px;
         width: 122.38px;
         height: 66px;
-        margin-left: 99px;
+        margin-left: 89px;
         img {
             object-fit: contain;
             width: 100%;

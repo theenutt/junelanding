@@ -1,8 +1,12 @@
 .gothic14 {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 17/14*100%;
     color: #fff;
+    @media (max-width: $md3+px) {
+        font-size: 10px;
+        line-height: 12/10*100%;
+    }
 }
 .montserrat26 {
     font-family: $ff;
@@ -11,6 +15,10 @@
     line-height: 32/26*100%;
     color: #fff;
     letter-spacing: 0.03em;
+    @media (max-width: $md3+px) {
+        font-size: 12px;
+        line-height: 15px;
+    }
 }
 .montserrat36 {
     font-family: $ff;
@@ -20,4 +28,8 @@
     color: #fff;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    @media (max-width: $md3+px) {
+        font-size: 19px;
+        line-height: 23px;
+    }
 }
