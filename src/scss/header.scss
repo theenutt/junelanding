@@ -153,6 +153,7 @@
                 content: url(/img/mobile/znak2.png);
                 top: 0;
                 left: 0;
+                filter:blur(2.5px)
             }
         }
     }
@@ -339,14 +340,6 @@
     position: absolute;
     top: 105px;
     left: 36%;
-    img {
-        @media (max-width: $md3+px) {
-            src: url((/img/mobile/girl_m.png));
-            top: 0;
-            left: 0; 
-            z-index: 1;   
-        }
-    }
 }
 
 }
