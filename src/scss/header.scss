@@ -21,6 +21,7 @@
             left: 85%;
             @media (max-width: $md3+px) {
                 content: url(/img/mobile/znak1.png);
+                top: 25px;
                 left: 0;
                 width: 74px;
                 height: 74px;
@@ -151,8 +152,8 @@
             object-fit: contain;
             @media (max-width: $md3+px) {
                 content: url(/img/mobile/znak2.png);
-                top: 0;
-                left: 0;
+                top: 148px;
+                left: 190px;
                 filter:blur(2.5px)
             }
         }
@@ -204,6 +205,8 @@
             object-fit: contain;
             @media (max-width: $md3+px) {
                 content: url(/img/mobile/znak3.png);
+                top: -5px;
+                left: 160px;
             }
         }
     }
@@ -328,11 +331,17 @@
 .header__perehod {
     position: absolute;
     width:1495px;
-    //height: 654px;
+    height: 654px;
     top: 570px;
     left: 0;
+    background-image: url(/img/header/perehod.png);
+    z-index: 1;
     @media (max-width: $md3+px) {
-        display: none;
+        top: 570px;
+        left: 0;
+        width: 320px;
+        height: 225px;
+        background-image: url(/img/mobile/perehod.png);
     }
 }
 
@@ -340,6 +349,17 @@
     position: absolute;
     top: 105px;
     left: 36%;
+    width: 926px;
+    height: 708px;
+    background-image: url(/img/header/girl.png);
+    @media (max-width: $md3+px) {
+        top: 160px;
+        left: 75px;
+        width: 169px;
+        height: 264px;
+        background-image: url(/img/mobile/girl_m.png);
+        z-index: -1;
+    }
 }
 
 }
@@ -368,9 +388,17 @@
 
     &__second {
         margin-top: 526px;
+        @media (max-width: $md3+px) {
+            margin-top: 178px;
+        }
     }
 
     &__container {
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
     }
 
     &__tasks {
