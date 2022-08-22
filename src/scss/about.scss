@@ -223,6 +223,13 @@
         top: 450px;
         border: 0.746154px solid #E4B354;
         border-radius: 50%;
+        @media (max-width: $md3+px) {
+            top: 210px;
+            left: 190px;
+            width: 54px;
+            height: 54px;
+            border: 0.41154px solid #E4B354;
+        }
         &:hover {
             .about__btnCircle {background: #FFD748;}
             .about__btnBrdr2 {border: 2px solid rgba(228, 214, 84, 0.6);}
@@ -255,6 +262,10 @@
         mix-blend-mode: lighten;
         filter: blur(93px);
         border-radius: 50%;
+        @media (max-width: $md3+px) {
+            width: 93px;
+            height: 92px;
+        }
     }
     &__btnBrdr1 {
         position: absolute;
@@ -267,6 +278,11 @@
         border: 2px solid rgba(228, 179, 84, 0.6);
         filter: blur(14px);
         border-radius: 50%;
+        @media (max-width: $md3+px) {
+            width: 54px;
+            height: 54px;
+            border: 1.1px solid rgba(228, 179, 84, 0.6);
+        }
     }
 
     &__btnBrdr2 {
@@ -280,8 +296,10 @@
         border: 2px solid rgba(228, 179, 84, 0.6);
         filter: blur(4px);
         border-radius: 50%;
-        &:hover { 
-            
+        @media (max-width: $md3+px) {
+            width: 54px;
+            height: 54px;
+            border: 1.1px solid rgba(228, 179, 84, 0.6);
         }
     }
 
@@ -294,6 +312,13 @@
         background: #FFC700;
         box-shadow: inset 0px 0px 11px #EDFF1E;
         border-radius: 50%;
+        @media (max-width: $md3+px) {
+            width: 33px;
+            height: 33px;
+            box-shadow: inset 0px 0px 6.1px #EDFF1E;
+            left: 19.2%;
+            top: 18.4%;
+        }
         &Blur {
             position: absolute;
             width: 59.69px;
@@ -306,6 +331,10 @@
             opacity: 0.4;
             filter: blur(5.96923px);
             border-radius: 50%;
+            @media (max-width: $md3+px) {
+                width: 33px;
+                height: 33px;
+            }
         }
     }
 
@@ -317,7 +346,10 @@
         top: 30%;
         background-image: url(/img/about/play.png);
         object-fit: contain;
-        
+        @media (max-width: $md3+px) {
+            width: 13px;
+            height: 13px;
+        }
     }
 
 
@@ -326,11 +358,21 @@
         position: relative;
         display: flex;
         margin-top: -20px;
-        padding-left: 24px; 
+        padding-left: 24px;
+        @media (max-width: $md3+px) {
+            position: relative;
+            margin-top: 6px;
+            padding-left: 94px;
+        } 
     }
 
     &__arrow {
         padding-top: 35px;
+        @media (max-width: $md3+px) {
+            padding: 0;
+            position: absolute;
+            top: 35px;
+        }
     }
     &__media {
         display: none;
@@ -345,10 +387,29 @@
         position: absolute;
         width: 320px;
         height: 432px;
-        top: 0;
-        left: 0;
+        top: -50px;
+        left: -30px;
         z-index: -1;
         background: url('/img/mobile/bg_mobile.png') 0 0 no-repeat;
+    }
+    &__screen {
+        margin-top: 66px;
+        &::before {
+            content: url(/img/mobile/play_in.png);
+            position: absolute;
+            top: 120px;
+            left: 110px;
+            z-index: 3;
+            object-fit: contain;
+        }
+        &::after {
+            content: url(/img/mobile/arrow.png);
+            position: absolute;
+            top: 45px;
+            left: 210px;
+            z-index: 2;
+            object-fit: contain;
+        }
     }
 }
 
