@@ -345,10 +345,11 @@
         left:32%;
         top: 30%;
         background-image: url(/img/about/play.png);
-        object-fit: contain;
+        
         @media (max-width: $md3+px) {
             width: 13px;
-            height: 13px;
+            height: 14px;
+            background-image: url(/img/mobile/play.png);
         }
     }
 
