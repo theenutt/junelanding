@@ -25,6 +25,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding-bottom: 0;
         }
 
     }
@@ -41,7 +42,7 @@
         @media (max-width: $md3+px) {
             width: 300px;
             height: 480px;
-            margin: 0px 10px;
+            margin: 115px 10px 0;
             padding: 33px 21px;
         }
         h4 {
@@ -92,8 +93,9 @@
         @media (max-width: $md3+px) {
             width: 277px;
             height: 107px;
-            left: 20px;
-            top: 505px;
+            left: 25px;
+            top: 870px;
+            z-index: 1;
         }
     }
     
@@ -113,6 +115,11 @@
         -ms-filter: blur(50px);
         filter: blur(50px);
         opacity: 0.8;
+        @media (max-width: $md3+px) {
+            opacity: 1;
+            filter: blur(45px);
+            background: radial-gradient(103.66% 103.66% at 50% 50%, #93D0FC 0%, rgba(147, 208, 252, 0.993) 100%);
+        }
     }  
 
     &__missionBG2 {
@@ -133,6 +140,7 @@
             @media (max-width: $md3+px) {
                 width: 277px;
                 height: 107px;
+                background: linear-gradient(89.85deg, rgba(147, 208, 252, 0.5) 0.1%, rgba(210, 166, 255, 0.5) 95.31%);
             }
     }
 
@@ -265,6 +273,9 @@
         @media (max-width: $md3+px) {
             width: 93px;
             height: 92px;
+            filter: blur(18px);
+            left: -22px;
+            top: -22px;
         }
     }
     &__btnBrdr1 {
@@ -282,6 +293,7 @@
             width: 54px;
             height: 54px;
             border: 1.1px solid rgba(228, 179, 84, 0.6);
+            filter: blur(7px);
         }
     }
 
@@ -300,6 +312,7 @@
             width: 54px;
             height: 54px;
             border: 1.1px solid rgba(228, 179, 84, 0.6);
+            filter: blur(2px);
         }
     }
 
@@ -316,8 +329,8 @@
             width: 33px;
             height: 33px;
             box-shadow: inset 0px 0px 6.1px #EDFF1E;
-            left: 19.2%;
-            top: 18.4%;
+            left: 19.233%;
+            top: 18.213%;
         }
         &Blur {
             position: absolute;
@@ -350,6 +363,8 @@
             width: 13px;
             height: 14px;
             background-image: url(/img/mobile/play.png);
+            left: 35%;
+            top: 35%;
         }
     }
 
@@ -363,7 +378,7 @@
         @media (max-width: $md3+px) {
             position: relative;
             margin-top: 6px;
-            padding-left: 94px;
+            padding-left: 30px;
         } 
     }
 
@@ -372,7 +387,8 @@
         @media (max-width: $md3+px) {
             padding: 0;
             position: absolute;
-            top: 35px;
+            top: 38px;
+            left: 45px;
         }
     }
     &__media {
