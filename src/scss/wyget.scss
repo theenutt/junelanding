@@ -124,6 +124,17 @@
             }
         }
     }
+    &__background {
+        @media (max-width: $md3+px) {
+            position: absolute;
+            top: 90px;
+            left: -47px;
+            width: 320px;
+            height: 259px;
+            background-image: url(/img/mobile/auto.png);
+            z-index: -1;
+        }
+    }
 }
 
 
