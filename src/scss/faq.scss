@@ -36,6 +36,12 @@
         padding: 35px 0px 0px 40px;
         margin-left: 40px;
         border-radius: 0 0 10px 10px;
+        @media (max-width: $md3+px) {
+            width: 270px;
+            height: 61px;
+            padding: 19px 0px 0px 20px;
+            margin-left: 15px;
+        }
         p {
             color: #000;
             padding-left: 0;
@@ -71,6 +77,10 @@
         align-items: center;
         justify-content: space-between;
         cursor: pointer;
+        @media (max-width: $md3+px) {
+            width: 300px;
+            height: 55px;
+        }
         &.active {
             .faq__cross {
             transform: rotate(45deg);
@@ -85,31 +95,59 @@
         text-transform: uppercase;
         color: #FFFFFF;
         padding-left: 40px;
+        @media (max-width: $md3+px) {
+            font-size: 11px;
+            line-height: 14/11*100%;
+            width: 165px;
+            height: 30px;
+            padding-left: 20px;
+        }
     }
 
     &__cross {
         width: 0px;
         height: 28px;
-        border: 3.2px solid #FFFFFF;
+        border: 3px solid #FFFFFF;
         position: relative;
         border-radius: 50% / 10%;
         left: -40px;
         transition: all 0.3s ease 0s;
+        @media (max-width: $md3+px) {
+            height: 15px;
+            left: -20px;
+            border: 2px solid #FFFFFF;
+        }
         &:after {
         content: "";
         width: 28px;
         height: 0px;
-        border: 3.2px solid #FFFFFF;
+        border: 3px solid #FFFFFF;
         position: absolute; 
         left: -14.3px; 
         top: 7.6px;
         border-radius: 10% / 50%;
+        @media (max-width: $md3+px) {
+            width: 15px;
+            border: 2px solid #FFFFFF;
+            left: -7.52px;
+            top: 3.65px;
+        }
         }
     }
     &__perehod {
         position: absolute;
         width:1495px;
+        height: 654px;
         top: 720px;
         left: 0;
+        background-image: url(/img/header/perehod.png);
+        z-index: 1;
+        @media (max-width: $md3+px) {
+            top: 550px;
+            left: 0;
+            width: 320px;
+            height: 225px;
+            background-image: url(/img/mobile/perehod.png);
+        }
     }
 }

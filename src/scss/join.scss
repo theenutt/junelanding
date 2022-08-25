@@ -1,6 +1,10 @@
 .join {
     margin-top: 527px;
     margin-bottom: 137px;
+    @media (max-width: $md3+px) {
+        margin-top: 245px;
+        margin-bottom: 135px;
+    }
     &__container {
     }
 
@@ -9,6 +13,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 
     &__countdown {
@@ -25,15 +30,23 @@
             font-size: 80px;
             line-height: 98/80*100%;
             letter-spacing: 0.03em;
+            @media (max-width: $md3+px) {
+                font-size: 44.5px;
+                line-height: 54/44*100%;
+            }
         }
         p {
             font-weight: 400;
             font-size: 17px;
             line-height: 21/17*100%;
+            @media (max-width: $md3+px) {
+                font-size: 9.5px;
+                line-height: 12/9.5*100%;
+            }
         }
     }
     .join__splitter {
-        padding: 0 27px 22px 27px;
+        padding: 0 14.5px 22px;
 
     }
 
@@ -130,6 +143,20 @@
             position: absolute;
             top: 23px;
             left: 0px;
+        }
+    } 
+    &__paragraph {
+        margin-top: 60px;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        @media (max-width: $md3+px) {
+            margin-top: 40px;
+            font-size: 11px;
+            line-height: 13/11*100%;
         }
     }
 }
