@@ -2,7 +2,7 @@
     margin-top: 335px;
     position: relative;
     @media (max-width: $md3+px) {
-        margin-top: 254px;
+        margin-top: 174px;
     }
     p {
         padding-left: 200px;
@@ -107,7 +107,7 @@
     &__cross {
         width: 0px;
         height: 28px;
-        border: 3px solid #FFFFFF;
+        border: 4px solid #FFFFFF;
         position: relative;
         border-radius: 50% / 10%;
         left: -40px;
@@ -115,22 +115,22 @@
         @media (max-width: $md3+px) {
             height: 15px;
             left: -20px;
-            border: 2px solid #FFFFFF;
+            border: 2.4px solid #FFFFFF;
         }
         &:after {
         content: "";
         width: 28px;
         height: 0px;
-        border: 3px solid #FFFFFF;
+        border: 4px solid #FFFFFF;
         position: absolute; 
-        left: -14.3px; 
-        top: 7.6px;
+        left: -14.25px; 
+        top: 6px;
         border-radius: 10% / 50%;
         @media (max-width: $md3+px) {
             width: 15px;
-            border: 2px solid #FFFFFF;
-            left: -7.52px;
-            top: 3.65px;
+            border: 2.4px solid #FFFFFF;
+            left: -7.42px;
+            top: 2.45px;
         }
         }
     }
@@ -138,7 +138,7 @@
         position: absolute;
         width:1495px;
         height: 654px;
-        top: 720px;
+        top: 670px;
         left: 0;
         background-image: url(/img/header/perehod.png);
         z-index: 1;

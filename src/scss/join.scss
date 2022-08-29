@@ -2,8 +2,8 @@
     margin-top: 527px;
     margin-bottom: 137px;
     @media (max-width: $md3+px) {
-        margin-top: 245px;
-        margin-bottom: 135px;
+        margin-top: 235px;
+        margin-bottom: 105px;
     }
     &__container {
     }
@@ -70,6 +70,7 @@
     &__inst {
         @media (max-width: $md3+px) {
             img {display: none;}
+            margin-left: 30px;
             width: 55px;
             height: 53px;
             background-image: url(/img/mobile/inst.png);
@@ -88,7 +89,11 @@
         }
         p {
             margin: 15px auto 23px 140px;
-            @media (max-width: $md3+px) {margin: 0px 0px 0px 0px;}
+            @media (max-width: $md3+px) {
+                margin: 47px 0px 0px -80px;
+                font-size: 11px;
+                line-height: 13.5/11*100%;
+            }
 
         }
         a {
@@ -155,12 +160,13 @@
             left: 520px;
             transform: rotate(25deg);
             @media (max-width: $md3+px) {
-                top: 0px;
-                left: 0px;
+                top: 120px;
+                left: 70px;
                 width: 47px;
                 height: 17px;
                 font-size: 8.5px;
                 padding-top: 3px;
+                transform: rotate(-32deg);
             }
         }
     }
@@ -181,19 +187,17 @@
             top: 23px;
             left: 0px;
         }
-        &::after {
-            content: url(img/mobile/arrow2.svg);
-            //display: none;
-            @media (max-width: $md3+px) {
-                content: url(img/mobile/arrow2.svg);
-                display: inline-block;
-                position: absolute;
-                top: 0px;
-                left: 0;
-            }
-        }
         @media (max-width: $md3+px) {
             display: none;
+        }
+    }
+    &__arrow_m {
+        display: none;
+        @media (max-width: $md3+px) {
+            display: inline-block;
+            position: absolute;
+            top: 310px;
+            left: 145px;
         }
     } 
     &__paragraph {
